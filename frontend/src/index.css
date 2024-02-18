@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  background: #DDE6ED;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7rem;
+  width: 100%;
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 0 1rem 0 1rem;
+  background: #003566;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.header-title-link {
+  color: #edf2f4;
+}
+
+.header-title-text {
+  font-size: 1.7em;
+}
+
+.pages {
+  min-height: 100vh;
+  max-width: 85rem;
+  padding: 1rem;
+  margin: 0 auto;
+  background: #087e8b;
+}
+
+.home {
+  border: 1px solid #000;
+}
+
+footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  height: 7em;
+  width: 100%;
+  padding: 0 1.5rem 0 1.5rem;
+  margin-top: 1rem;
+  z-index: 1000;
+  color: #ffffff;
+  background: #1B2430;
+}
