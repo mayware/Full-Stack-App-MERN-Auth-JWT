@@ -93,8 +93,9 @@ header .header-container {
   right: 20px;
   cursor: pointer;
   padding: 6px;
-  border-radius: 50%;
-  color: #0b090a;
+  border-radius: 4px;
+  color: #fff;
+  background: #ef476f;
 }
 
 label,
