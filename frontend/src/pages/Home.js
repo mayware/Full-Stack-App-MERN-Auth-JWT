@@ -4,7 +4,6 @@ import WorkoutDetails from '../components/WorkoutDetails'
 import WorkoutForm from '../components/WorkoutForm'
 
 
-
 const Home = () => {
     const { workouts, dispatch } = useWorkoutsContext()
 
@@ -17,7 +16,7 @@ const Home = () => {
             }
         }
         fetchWorkouts()
-    }, [])
+    }, [dispatch])
 
     return (
         <div className="home">

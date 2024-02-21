@@ -113,6 +113,10 @@ input {
   box-sizing: border-box;
 }
 
+input.error {
+  border: 1px solid var(--error);
+}
+
 form button {
   background: var(--primary);
   border: 0;
