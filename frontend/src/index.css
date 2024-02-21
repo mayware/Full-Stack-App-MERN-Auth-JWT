@@ -22,7 +22,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #ced4da;
 }
 
 header a {
@@ -39,7 +39,7 @@ header .header-container {
   top: 0;
   margin-bottom: 1rem;
   padding: 0 1rem 0 1rem;
-  background: #003566;
+  background: #004e98;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
@@ -56,11 +56,45 @@ header .header-container {
   max-width: 85rem;
   padding: 1rem;
   margin: 0 auto;
-  background: #087e8b;
 }
 
 .home {
-  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 100px;
+}
+
+.workout-details {
+  position: relative;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 0.3rem;
+  background: #e0fbfc;
+  -webkit-box-shadow: 8px 8px 24px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 8px 24px -10px rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 24px -10px rgba(0, 0, 0, 1);
+}
+
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  color: var(--primary);
+}
+
+.workout-details p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #0b090a;
+}
+
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  color: #0b090a;
 }
 
 footer .footer-container {
