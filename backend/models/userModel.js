@@ -46,20 +46,25 @@ userSchema.statics.signup = async function (email, password) {
 }
 
 // static login method
-
 userSchema.statics.login = async function (email, password) {
 
     if (!email || !password) {
         throw Error('All fields must be filled')
     }
 
-    // checks if the user already registered
+    // looks for the existing user in the database by the provided email
     const user = await this.findOne({ email })
 
-    if (exists) {
-        throw Error('Email already in use')
+    if (!user) {
+        throw Error('Incorrect email')
+    }
+    const match = await bcrypt.compare(password, user.password)
+
+    if (!match) {
+        throw Error('Incorrect password')
     }
 
+    return user
 
 }
 
