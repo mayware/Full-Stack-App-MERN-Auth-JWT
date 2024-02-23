@@ -30,7 +30,7 @@ userSchema.statics.signup = async function (email, password) {
     if (!validator.isStrongPassword(password)) {
         throw Error('Password not strong enough')
     }
-
+    // checks if the email already registered
     const exists = await this.findOne({ email })
 
     if (exists) {
@@ -44,5 +44,26 @@ userSchema.statics.signup = async function (email, password) {
     return user
 
 }
+
+// static login method
+
+userSchema.statics.login = async function (email, password) {
+
+    if (!email || !password) {
+        throw Error('All fields must be filled')
+    }
+
+    // checks if the user already registered
+    const user = await this.findOne({ email })
+
+    if (exists) {
+        throw Error('Email already in use')
+    }
+
+
+}
+
+
+
 
 module.exports = mongoose.model('User', userSchema)
