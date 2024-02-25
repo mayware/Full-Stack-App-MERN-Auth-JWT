@@ -53,6 +53,10 @@ header .header-container {
   margin-left: 0.5rem;
 }
 
+.user-name {
+  color: #fff;
+}
+
 .logout-btn {
   background: var(--primary);
   color: #fff;
@@ -62,6 +66,7 @@ header .header-container {
   font-family: "Poppins";
   cursor: pointer;
   font-size: 1em;
+  margin-left: 0.5rem;
 }
 
 .pages {
