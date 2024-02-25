@@ -22,7 +22,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #ced4da;
+  background: #f1f1f1;
 }
 
 header a {
@@ -51,11 +51,23 @@ header .header-container {
   font-size: 1.7em;
 }
 
+.nav-link {
+  margin-left: 0.5rem;
+}
+
 .pages {
   min-height: 100vh;
   max-width: 85rem;
   padding: 1rem;
   margin: 0 auto;
+}
+
+.login-form,
+.signup-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
 }
 
 .home {
@@ -108,8 +120,7 @@ input {
   margin-top: 10px;
   margin-bottom: 20px;
   width: 100%;
-  border: 1px solid #000;
-  border: 4px;
+  border: 1px solid #ddd;
   box-sizing: border-box;
 }
 
